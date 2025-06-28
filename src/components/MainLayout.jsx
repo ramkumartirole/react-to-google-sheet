@@ -1,6 +1,7 @@
 // src/components/MainLayout.jsx
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
+import ModelViewer from './ModelViewer';
 
 const MainLayout = () => {
   const [activeModel, setActiveModel] = useState('Model A');
@@ -8,15 +9,13 @@ const MainLayout = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        {/* 3D Viewer Placeholder */}
-        <div className="col-md-8 scene-area d-flex align-items-center justify-content-center">
-          <div style={{ width: '80%', height: '600px', background: '#c0b6b6' }}>
-            <h3 className="text-center text-muted" style={{ fontSize: '100px', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              {activeModel}
-            </h3>
-          </div>
+        {/* Left: 3D Viewer Area */}
+        <div className="col-md-8 p-0" style={{ height: '100vh' }}>
+          {/* REMOVE the static gray box and H3 placeholder */}
+          <ModelViewer activeModel={activeModel} />
         </div>
-        {/* Sidebar with Form */}
+
+        {/* Right: Sidebar */}
         <Sidebar activeModel={activeModel} setActiveModel={setActiveModel} />
       </div>
     </div>

@@ -1,7 +1,7 @@
 // src/App.jsx
 import MainLayout from './components/MainLayout';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'; // if needed for additional styles
+import './App.css'; 
 
 function App() {
   return <MainLayout />;
