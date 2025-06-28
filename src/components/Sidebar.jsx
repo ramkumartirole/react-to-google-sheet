@@ -1,4 +1,3 @@
-import React from 'react';
 import UserPreferenceForm from './UserPreferenceForm';
 
 const Sidebar = ({ activeModel, setActiveModel }) => {
@@ -8,12 +7,12 @@ const Sidebar = ({ activeModel, setActiveModel }) => {
       style={{
         backgroundColor: '#fff',
         height: '100vh',
-        boxShadow: '-2px 0 8px rgba(0,0,0,0.05)',
+        boxShadow: '-2px 0 8px rgba(75, 67, 67, 0.05)',
         display: 'flex',
         flexDirection: 'column',
       }}
     >
-      {/* Scrollable Content Area */}
+      
       <div
         style={{
           padding: '1.5rem',
@@ -21,7 +20,7 @@ const Sidebar = ({ activeModel, setActiveModel }) => {
           flex: 1,
         }}
       >
-        {/* Model A Card */}
+    
         <div
           className={`card mb-3 ${activeModel === 'Model A' ? 'active border-primary bg-light' : ''}`}
           style={{ cursor: 'pointer' }}
@@ -33,7 +32,7 @@ const Sidebar = ({ activeModel, setActiveModel }) => {
           </div>
         </div>
 
-        {/* Model B Card */}
+       
         <div
           className={`card mb-3 ${activeModel === 'Model B' ? 'active border-primary bg-light' : ''}`}
           style={{ cursor: 'pointer' }}
@@ -45,7 +44,7 @@ const Sidebar = ({ activeModel, setActiveModel }) => {
           </div>
         </div>
 
-        {/* User Preference Form */}
+    
         <hr />
         <UserPreferenceForm />
       </div>
