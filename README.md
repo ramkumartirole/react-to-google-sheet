@@ -1,3 +1,7 @@
+# Google sheet link for the data storage 
+https://docs.google.com/spreadsheets/d/1pUpOmbUncisD1hWFnTU2o4dx0SVNAblVDj7Dj5FzoH4/edit?usp=sharing
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
