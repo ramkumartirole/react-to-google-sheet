@@ -1,1 +1,4 @@
 node_modules/
+my-server/.env
+.env
+*.env
